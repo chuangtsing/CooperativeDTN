@@ -12,6 +12,6 @@ public:
 
 	void ExportNetwork();
 	void StructNodesFromEdges();
-	BOOL StructNodesFromFile();
+	BOOL StructNodesFromFile(string);
 };
 

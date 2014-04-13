@@ -158,9 +158,9 @@ void ProcessMIT::StructNodesFromEdges()
 }
 
 
-BOOL ProcessMIT::StructNodesFromFile()
+BOOL ProcessMIT::StructNodesFromFile(string filename)
 {
-	FILE * fp = fopen("MITNetwork.dat", "r");
+	FILE * fp = fopen(filename.c_str(), "r");
 	if(fp == NULL) return FALSE;
 	CStdioFile file(fp);
 	CString strLine = _T("");
